@@ -1,0 +1,247 @@
+body {
+    overflow-y: hidden;
+}
+.header .menu-box > ul > .ability {
+    color:#7AD0F0;
+}
+
+
+.page-1 {
+    margin-top: 230px;
+}
+@media (max-width:768px) {
+    
+}
+.page-1 .text-box .title {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.page-1 .text-box .sub-title {
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+@media (max-width:768px) {
+    .page-1 .text-box .sub-title {
+        color:#888;
+    }
+}
+.page-1 .work-box .work-wrap {
+    margin-top: 60px;
+}
+.page-1 .work-box .work-wrap > ul {
+    margin: 0 -20px;
+}
+.page-1 .work-box .work-wrap > ul > .cell {
+    width: 25%;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+@media (max-width:768px) {
+    .page-1 .work-box .work-wrap > ul > .cell {
+        width: 50%;
+    }
+    .page-1 .work-box .work-wrap > ul > .cell:nth-child(2n+1) {
+        clear: both;
+    }
+}
+
+.page-1 .work-box .work-wrap > ul > .cell:hover {
+    box-shadow: 6px 6px 10px rgba(0,0,0,.2);
+    border-radius: 20px;
+}
+.page-1 .work-box .work-wrap > ul > .cell > .ico-box {
+    color:#7AD0F0;
+    font-size: 40px;
+}
+
+
+.page-1 .work-box .work-wrap > ul > .cell > .work-text-box {
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+.page-1 .work-box .work-wrap > ul > .cell > .work-text-box > .title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media (max-width:768px) {
+    .page-1 .work-box .work-wrap > ul > .cell > .work-text-box > .title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width:768px) {
+    .page-1 .work-box .work-wrap > ul > .cell > .work-text-box > .title {
+        font-size: 22px;
+    }
+}
+
+
+
+.page-1 .work-box .work-wrap > ul > .cell > .work-text-box > .sub-title {
+    margin-top: 20px;
+    transform: translateY(40px);
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.page-1 .work-box .work-wrap > ul > .cell:hover > .work-text-box > .sub-title {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+@media (max-width:768px) {
+    .page-1 .work-box .work-wrap > ul > .cell > .work-text-box > .sub-title {
+        opacity: 1;
+        transform: translateY(0);
+        color:#888;
+    }
+}
+
+
+
+/* 활동 사항 */
+.page-1 .experience-box {
+    margin-top: 100px;
+}
+.page-1 .experience-box .experience-wrap {
+    margin-top: 40px;
+    
+}
+
+
+.page-1 .experience-box .experience-wrap > ul > div {
+    width: calc(100% / 2 - 20px);
+    padding: 60px;
+    border: 1px solid #222;
+}
+@media (max-width:1024px) {
+    .page-1 .experience-box .experience-wrap > ul > div {
+        padding: 40px;
+        width: calc(100% / 2 - 10px);
+    }
+}
+@media (max-width:768px) {
+    .page-1 .experience-box .experience-wrap > ul > div {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media ( max-width:320px) {
+    .page-1 .experience-box .experience-wrap > ul > div {
+        padding: 20px;
+    }
+}
+
+.page-1 .experience-box .experience-wrap nav > ul > li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.page-1 .experience-box .experience-wrap nav > ul > li:nth-child(2) {
+    margin-top: 40px;
+}
+
+
+.page-1 .experience-box .experience-wrap nav > ul > li .text {
+    margin-left: 70px;
+}
+
+
+@media (max-width:1024px) {
+    .page-1 .experience-box .experience-wrap nav > ul > li .text {
+        margin-left: 35px;
+        width: 100%;
+    }
+}
+
+@media (max-width:430px) {
+    .page-1 .experience-box .experience-wrap nav > ul > li .text {
+        margin-left: 0;
+    }
+    .page-1 .experience-box .experience-wrap nav > ul > li span {
+        display: block;
+    }
+}
+
+
+
+
+
+
+.page-1 .experience-box .experience-wrap nav > ul .title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    
+}
+@media (max-width:768px) {
+    .page-1 .experience-box .experience-wrap nav > ul .title {
+        font-size: 24px;
+    }
+}
+
+
+
+/* 다룰 수 있는 툴 */
+.page-1 .tool-box {
+    margin-top: 100px;
+}
+.page-1 .tool-box .tool-wrap {
+    margin-top: 40px;
+}
+.page-1 .tool-box .tool-wrap > ul {
+    margin: 0 -9px;
+}
+.page-1 .tool-box .tool-wrap > ul > li {
+    width: calc(100% / 12);
+    padding: 0 9px;
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    .page-1 .tool-box .tool-wrap > ul > li {
+        width: calc(100% / 6);
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:430px) {
+    .page-1 .tool-box .tool-wrap > ul > li {
+        width: calc(100% / 5);
+    }
+    .page-1 .tool-box .tool-wrap > ul > li:nth-child(5n+1){
+        clear: both;
+    }
+}
+
+
+
+@media (max-width:320px) {
+    .page-1 .tool-box .tool-wrap > ul > li {
+        width: calc(100% / 2);
+        white-space: nowrap;
+    }
+    .page-1 .tool-box .tool-wrap > ul > li:nth-child(2n+1){
+        clear: both;
+    }
+}
+
+
+
+/*
+.page-1 .tool-box .tool-wrap > ul > li .img-box {
+    width: 90px;
+    height: 90px;
+}*/
+
+/* 하단 공간 */
+
+.block {
+    margin-top: 60px;
+}

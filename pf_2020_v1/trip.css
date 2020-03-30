@@ -1,0 +1,136 @@
+.header .menu-box > ul > .trip {
+    color: #7AD0F0;
+}
+
+
+.page-1 {
+    margin-top: 230px;
+}
+
+.page-1 .text-box .title {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.page-1 .text-box .sub-title {
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+@media (max-width:768px) {
+    .page-1 .text-box .sub-title {
+        font-size: 24px;
+        color:#888;
+    }
+}
+
+@media (max-width:430px) {
+    .page-1 .text-box .sub-title {
+        font-size: 18px;
+    }
+}
+
+
+.page-1 .slide .visual .img-box {
+    height: 100%;
+}
+
+.page-1 .slide {
+    margin-top: 130px;
+}
+
+.page-1 .slide .sub-text-box .trip-place {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.page-1 .slide .sub-text-box .trip-content {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media (max-width:768px) {
+    .page-1 .slide .sub-text-box .trip-place {
+        font-size: 28px;
+    }
+    .page-1 .slide .sub-text-box .trip-content {
+        font-size: 24px;
+    }
+}
+
+
+@media (max-width:430px) {
+    .page-1 .slide .sub-text-box .trip-place {
+        font-size: 22px;
+    }
+    .page-1 .slide .sub-text-box .trip-content {
+        font-size: 18px;
+    }
+}
+
+
+.page-1 .slide .visual .slick-track {
+    margin: 0 -20px;
+}
+
+.page-1 .slide .visual .slick-track .slick-slide {
+    margin: 0 20px;
+}
+
+@media (max-width:1024px) {
+    .page-1 .slide .visual .slick-track .slick-slide {
+        margin: 0 10px;
+    }
+
+    .page-1 .slide .visual .slick-track {
+        margin: 0 -10px;
+    }
+}
+
+
+.page-1 .slide .visual {
+    margin-top: 30px;
+}
+
+.page-1 .slide .visual .slick-next:before,
+.page-1 .slide .visual .slick-prev:before {
+    color: #222;
+}
+
+.slick-next.slick-disabled:before,
+.slick-prev.slick-disabled:before {
+    opacity: 1;
+}
+
+
+.page-1 .slide .visual .slick-next,
+.page-1 .slide .visual .slick-prev {
+    top: 0;
+}
+
+.page-1 .slide .visual .slick-next {
+    right: 45%;
+    transform: translateX(-50%);
+}
+
+.page-1 .slide .visual .slick-prev {
+    left: 45%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+@media (max-width:320px) {
+    .page-1 .slide .visual .slick-prev {
+        left:35%;
+    }
+    .page-1 .slide .visual .slick-next {
+        right: 35%;
+    }
+}
+
+.page-1 .slide .visual .slick-list {
+    padding-top: 30px;
+}
+
+.block {
+    margin-top: 100px;
+}

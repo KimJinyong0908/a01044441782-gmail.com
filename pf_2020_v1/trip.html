@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 한글, 안깨짐 -->
+    <meta charset="UTF-8">
+
+    <!-- 모바일에서 PC에서 보던 사이즈와 같은 크기로 나오게 함 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 호환성 문제를 어느정도 해결 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- 문서 제목 -->
+    <title>김진용 / K.Jinyong / 포트폴리오 / 여행</title>
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- UI-Kit불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    
+    <!-- slick불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+
+
+    <!-- aos 불러오기 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <!-- 폰트어썸 불러오기 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+    <!-- 공통 CSS 불러오기 -->
+    <link rel="stylesheet" href="./common.css">
+    <!-- 메인 전용 CSS 불러오기 -->
+    <link rel="stylesheet" href="./trip.css">
+
+
+</head>
+
+<body>
+
+    <!-- sns / contact-box -->
+    <div class="contact fly pc-1920">
+        <ul>
+            <li><a href="https://to2.kr/beq" class="ico-box youtube-ico"><span class="ico"><i class="fab fa-youtube"></i></span><span class="text">유튜브 채널로 이동</span></a></li>
+            <li><a href="" class="ico-box phone-ico"><span class="ico"><i class="fas fa-mobile-alt"></i></span><span class="text">010-4444-1782</span></a></li>
+            <li><a href="https://to2.kr/ber" class="ico-box blog-ico"><span class="ico"><i class="fas fa-user-circle"></i></span><span class="text">블로그로 이동</span></a></li>
+            <li><a href="" class="ico-box mail-ico"><span class="ico"><i class="fas fa-envelope"></i></span><span class="text">a01044441782@gmail.com</span></a></li>
+            <li><a href="#" class="ico-box top-ico"><span class="ico"><i class="fas fa-caret-up"></i></span><span class="text">최상단으로 이동</span></a></li>
+        </ul>
+    </div>
+    <!-- 1024px sns / contact-box -->
+    <div class="contact only-pc-1024 none">
+        <ul>
+            <li><a href="https://to2.kr/beq" class="ico-box youtube-ico"><span class="text">유튜브 채널로 이동</span><span class="ico"><i class="fab fa-youtube"></i></span></a></li>
+            <li><a href="" class="ico-box phone-ico"><span class="text">010-4444-1782</span><span class="ico"><i class="fas fa-mobile-alt"></i></span></a></li>
+            <li><a href="https://to2.kr/ber" class="ico-box blog-ico"><span class="text">블로그로 이동</span><span class="ico"><i class="fas fa-user-circle"></i></span></a></li>
+            <li><a href="" class="ico-box mail-ico"><span class="text">a01044441782@gmail.com</span><span class="ico"><i class="fas fa-envelope"></i></span></a></li>
+            <li><a href="#" class="ico-box top-ico"><span class="text">최상단으로 이동</span><span class="ico"><i class="fas fa-caret-up"></i></span></a></li>
+        </ul>
+    </div>
+    <!-- 최상단 헤더 -->
+    <div class="header">
+        <div class="header-wrap">
+            <div class="con">
+                <nav class="menu-box row">
+                    <a href="./index.html" class="logo-box cell">
+                        <div class="logo-text">K.Jinyong</div>
+                        <div class="blue-bg logo-blue-bg"></div>
+                    </a>
+                    <ul class="row cell-right pc-769">
+                        <li class="cell work"><a href="./index.html#work-page">작품</a></li>
+                        <li class="cell info"><a href="./info.html">소개</a></li>
+                        <li class="cell trip"><a href="./trip.html">여행</a></li>
+                        <li class="cell ability"><a href="./ability.html">능력</a></li>
+                    </ul>
+                    <!-- 상단 바 및 메뉴버튼 아이콘 -->
+                    <ul class="row cell-right mobile-menu mobile-768 mobile-top-bar">
+                        <li class="cell toggle-side-bar-btn"><i class="fas fa-bars"></i></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- 좌측 사이드 바 메뉴 -->
+    <div class="right-side-bar-box">
+        <div class="right-side-bar">
+            <div class="menu-1">
+                <ul>
+                    <li>
+                        <a href="./index.html#work-page">작품</a>
+                    </li>
+                    <li>
+                        <a href="./info.html">소개</a>
+                    </li>
+                    <li>
+                        <a href="./trip.html">여행</a>
+                    </li>
+                    <li>
+                        <a href="./ability.html">능력</a>
+                    </li>
+                </ul>
+                <ul class="mobile-contact">
+                    <li><a href="https://to2.kr/beq" class="ico-box youtube-ico"><span class="ico"><i class="fab fa-youtube"></i></span><span class="text">유튜브 채널로 이동</span></a></li>
+                    <li><a href="" class="ico-box phone-ico"><span class="ico"><i class="fas fa-mobile-alt"></i></span><span class="text">010-4444-1782</span></a></li>
+                    <li><a href="https://to2.kr/ber" class="ico-box blog-ico"><span class="ico"><i class="fas fa-user-circle"></i></span><span class="text">블로그로 이동</span></a></li>
+                    <li><a href="" class="ico-box mail-ico"><span class="ico"><i class="fas fa-envelope"></i></span><span class="text">a01044441782@gmail.com</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 메인 페이지 -->
+    <div class="page page-1">
+        <div class="page-wrap">
+            <div class="con">
+                <div class="main-box">
+                    <div class="text-box">
+                        <div class="title">여행을 통해 <br class="mobile-mobile2">새로운 경험을 하다.</div>
+                        <div class="sub-title">지친 하루에 단비같은 휴식으로 컨디션을 회복하고 알지 못했던 환경, 문화, 사람을 통해 새로운 경험을 한다. </div>
+                    </div>
+                    <div class="slide slide-1" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="sub-text-box">
+                            <div class="trip-place">여수</div>
+                            <div class="trip-content">4년만에 재방문한 여수 과거에 비해 젊은층을 공략하는 장소가 많아졌다.</div>
+                        </div>
+                        <section class="visual">
+                            <div class="item item-1">
+                                <div class="img-box"><img src="./img/yesu-1.jpg" alt=""></div>
+                            </div>
+                            <div class="item item-2">
+                                <div class="img-box"><img src="./img/yesu-2.jpg" alt=""></div>
+                            </div>
+                            <div class="item item-3">
+                                <div class="img-box"><img src="./img/yesu-3.jpg" alt=""></div>
+                            </div>
+                            <div class="item item-4">
+                                <div class="img-box"><img src="./img/yesu-4.jpg" alt=""></div>
+                            </div>
+                            <div class="item item-5">
+                                <div class="img-box"><img src="./img/yesu-5.jpg" alt=""></div>
+                            </div>
+                            <div class="item item-6">
+                                <div class="img-box"><img src="./img/yesu-6.jpg" alt=""></div>
+                            </div>
+                            <div class="item item-7">
+                                <div class="img-box"><img src="./img/yesu-7.jpg" alt=""></div>
+                            </div>
+                            <div class="item item-8">
+                                <div class="img-box"><img src="./img/yesu-8.jpg" alt=""></div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="slide slide-2" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="sub-text-box">
+                            <div class="trip-place">방콕</div>
+                            <div class="trip-content">부익부빈익부의 차이가 심하게 느껴지고, 생각보다 BTS(지하철)이 잘되어있다.</div>
+                        </div>
+                        <section class="visual">
+                            <div class="item item-1">
+                                <div class="img-box"><img src="./img/bkk-1.jpg" alt=""></div>
+                            </div>
+                            <div class="item item-2">
+                                <div class="img-box"><img src="./img/bkk-2.jpg" alt=""></div>
+                            </div>
+                            <div class="item item-3">
+                                <div class="img-box"><img src="./img/bkk-3.jpg" alt=""></div>
+                            </div>
+                            <div class="item item-4">
+                                <div class="img-box"><img src="./img/bkk-4.jpg" alt=""></div>
+                            </div>
+                            <div class="item item-5">
+                                <div class="img-box"><img src="./img/bkk-5.jpg" alt=""></div>
+                            </div>
+                            <div class="item item-6">
+                                <div class="img-box"><img src="./img/bkk-6.jpg" alt=""></div>
+                            </div>
+                            <div class="item item-7">
+                                <div class="img-box"><img src="./img/bkk-7.jpg" alt=""></div>
+                            </div>
+                            <div class="item item-8">
+                                <div class="img-box"><img src="./img/bkk-8.jpg" alt=""></div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="slide slide-3" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="sub-text-box">
+                            <div class="trip-place">일본</div>
+                            <div class="trip-content">절제된 형태를 정리되게 잘 녹였다. + 많은 컬러를 사용하지만 무드가 좋다. + 초밥이 너무 맛있다.</div>
+                        </div>
+                        <section class="visual">
+                            <div class="item item-1">
+                                <div class="img-box"><img src="./img/japan-1.jpg" alt=""></div>
+                            </div>
+                            <div class="item item-2">
+                                <div class="img-box"><img src="./img/japan-2.jpg" alt=""></div>
+                            </div>
+                            <div class="item item-3">
+                                <div class="img-box"><img src="./img/japan-3.jpg" alt=""></div>
+                            </div>
+                            <div class="item item-4">
+                                <div class="img-box"><img src="./img/japan-4.jpg" alt=""></div>
+                            </div>
+                            <div class="item item-5">
+                                <div class="img-box"><img src="./img/japan-5.jpg" alt=""></div>
+                            </div>
+                            <div class="item item-6">
+                                <div class="img-box"><img src="./img/japan-6.jpg" alt=""></div>
+                            </div>
+                            <div class="item item-7">
+                                <div class="img-box"><img src="./img/japan-7.jpg" alt=""></div>
+                            </div>
+                            <div class="item item-8">
+                                <div class="img-box"><img src="./img/japan-8.jpg" alt=""></div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="slide slide-4" data-aos="fade-up" data-aos-duration="1000">
+                        <div class="sub-text-box">
+                            <div class="trip-place">DDP - 디올 전시회</div>
+                            <div class="trip-content">20살 첫 전시회 - 디스플레이의 중요성 그리고 디올은 디올이다.</div>
+                        </div>
+                        <section class="visual">
+                            <div class="item item-1">
+                                <div class="img-box"><img src="./img/dior-1.jpeg" alt=""></div>
+                            </div>
+                            <div class="item item-2">
+                                <div class="img-box"><img src="./img/dior-2.jpeg" alt=""></div>
+                            </div>
+                            <div class="item item-3">
+                                <div class="img-box"><img src="./img/dior-3.jpeg" alt=""></div>
+                            </div>
+                            <div class="item item-4">
+                                <div class="img-box"><img src="./img/dior-4.jpeg" alt=""></div>
+                            </div>
+                            <div class="item item-5">
+                                <div class="img-box"><img src="./img/dior-5.jpeg" alt=""></div>
+                            </div>
+                            <div class="item item-6">
+                                <div class="img-box"><img src="./img/dior-6.jpeg" alt=""></div>
+                            </div>
+                            <div class="item item-7">
+                                <div class="img-box"><img src="./img/dior-7.jpeg" alt=""></div>
+                            </div>
+                            <div class="item item-8">
+                                <div class="img-box"><img src="./img/dior-8.jpeg" alt=""></div>
+                            </div>
+                        </section>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="block"></div>
+
+
+    <script src="./trip.js"></script>
+    <script src="./common.js"></script>
+</body>
+
+</html>

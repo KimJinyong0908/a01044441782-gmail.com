@@ -1,0 +1,140 @@
+.header .menu-box > ul > .info {
+    color: #7AD0F0;
+}
+
+
+.page-1 {
+    height: 1080px;
+}
+
+@media (max-width:1024px) {
+    .page-1 {
+        height: auto;
+    }
+}
+
+.page-1 .main-box .main-line {
+    position: relative;
+    top: 150px;
+    width: 510px;
+    height: 432px;
+    border: 2px solid #222;
+}
+@media (max-width:768px) {
+    .page-1 .main-box .main-line {
+        top:80px;
+    }
+}
+.page-1 .main-box ul {
+    margin: 0 -40px;
+}
+
+@media (max-width:1024px) {
+    .page-1 .main-box ul {
+        margin: 0 0px;
+    }
+}
+
+.page-1 .main-box ul > div {
+    padding: 0 20px;
+}
+
+@media (max-width:768px) {
+    .page-1 .main-box ul > div {
+        padding: 0;
+    }
+}
+
+.page-1 .main-box ul div:nth-child(1) {
+    width: 60%;
+}
+
+.page-1 .main-box ul div:nth-child(2) {
+    width: 40%;
+}
+@media (max-width:768px) {
+    .page-1 .main-box ul div:nth-child(1) {
+        width: 100%;
+    }
+    .page-1 .main-box ul div:nth-child(2) {
+    width: 100%;
+}
+}
+
+
+.page-1 .main-box .main-line .img-box {
+    width: 290px;
+    position: absolute;
+    top: 128px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (max-width:320px) {
+    .page-1 .main-box .main-line .img-box {
+        width: 220px;
+    }
+}
+
+.page-1 .main-box .text-box {
+    margin-top: 302px;
+    padding-left: 200px;
+
+}
+
+@media (max-width:1024px) {
+    .page-1 .main-box .text-box {
+        padding-left: 30px;
+        margin-top: 150px;
+    }
+}
+
+@media (max-width:768px) {
+    .page-1 .main-box .text-box {
+        padding-left: 0;
+    }
+
+}
+
+@media (max-width:768px) {
+    .page-1 .main-box .text-box {
+        margin-top: 230px;
+    }
+
+}
+
+
+
+
+.page-1 .main-box .text-box .main-title {
+    font-size: 32px;
+    font-weight: 500;
+    display: block;
+}
+
+.page-1 .main-box .text-box .sub-title {
+    margin-top: 35px;
+    display: block;
+}
+
+@media (max-width:768px) {
+    .page-1 .main-box .text-box .sub-title {
+        font-size: 18px;
+        font-weight: 400;
+        color:#888;
+        margin-top: 50px;
+    }
+    .page-1 .main-box .text-box .sub-title strong {
+        font-size: 22px;
+        font-weight: 600;
+        color: #222;
+    }
+}
+
+.page-1 .main-box .text-box .mail {
+    display: block;
+    margin-top: 35px;
+    font-size: 20px;
+    
+}
+

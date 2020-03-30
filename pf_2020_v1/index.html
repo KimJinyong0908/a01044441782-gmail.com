@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- 한글, 안깨짐 -->
+    <meta charset="UTF-8">
+
+    <!-- 모바일에서 PC에서 보던 사이즈와 같은 크기로 나오게 함 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 호환성 문제를 어느정도 해결 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- 문서 제목 -->
+    <title>김진용 / K.Jinyong / 포트폴리오</title>
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <!-- UI-Kit불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    
+    <!-- 팝업 불러오기 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js"></script>
+
+    <!-- aos 불러오기 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <!-- 폰트어썸 불러오기 -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+
+    <!-- 공통 CSS 불러오기 -->
+    <link rel="stylesheet" href="./common.css">
+    <!-- 메인 전용 CSS 불러오기 -->
+    <link rel="stylesheet" href="./index.css">
+
+
+</head>
+
+<body>
+
+    <!-- sns / contact-box -->
+    <div class="contact fly pc-1920">
+        <ul>
+            <li><a href="https://to2.kr/beq" class="ico-box youtube-ico"><span class="ico"><i class="fab fa-youtube"></i></span><span class="text">유튜브 채널로 이동</span></a></li>
+            <li><a href="" class="ico-box phone-ico"><span class="ico"><i class="fas fa-mobile-alt"></i></span><span class="text">010-4444-1782</span></a></li>
+            <li><a href="https://to2.kr/ber" class="ico-box blog-ico"><span class="ico"><i class="fas fa-user-circle"></i></span><span class="text">블로그로 이동</span></a></li>
+            <li><a href="" class="ico-box mail-ico"><span class="ico"><i class="fas fa-envelope"></i></span><span class="text">a01044441782@gmail.com</span></a></li>
+            <li><a href="#" class="ico-box top-ico"><span class="ico"><i class="fas fa-caret-up"></i></span><span class="text">최상단으로 이동</span></a></li>
+        </ul>
+    </div>
+    <!-- 1024px sns / contact-box -->
+    <div class="contact only-pc-1024 none">
+        <ul>
+            <li><a href="https://to2.kr/beq" class="ico-box youtube-ico"><span class="text">유튜브 채널로 이동</span><span class="ico"><i class="fab fa-youtube"></i></span></a></li>
+            <li><a href="" class="ico-box phone-ico"><span class="text">010-4444-1782</span><span class="ico"><i class="fas fa-mobile-alt"></i></span></a></li>
+            <li><a href="https://to2.kr/ber" class="ico-box blog-ico"><span class="text">블로그로 이동</span><span class="ico"><i class="fas fa-user-circle"></i></span></a></li>
+            <li><a href="" class="ico-box mail-ico"><span class="text">a01044441782@gmail.com</span><span class="ico"><i class="fas fa-envelope"></i></span></a></li>
+            <li><a href="#" class="ico-box top-ico"><span class="text">최상단으로 이동</span><span class="ico"><i class="fas fa-caret-up"></i></span></a></li>
+        </ul>
+    </div>
+    <!-- 최상단 헤더 -->
+    <div class="header">
+        <div class="header-wrap">
+            <div class="con">
+                <nav class="menu-box row">
+                    <a href="./index.html" class="logo-box cell">
+                        <div class="logo-text">K.Jinyong</div>
+                        <div class="blue-bg logo-blue-bg"></div>
+                    </a>
+                    <ul class="row cell-right pc-769">
+                        <li class="cell work"><a href="./index.html#work-page">작품</a></li>
+                        <li class="cell info"><a href="./info.html">소개</a></li>
+                        <li class="cell trip"><a href="./trip.html">여행</a></li>
+                        <li class="cell ability"><a href="./ability.html">능력</a></li>
+                    </ul>
+                    <!-- 상단 바 및 메뉴버튼 아이콘 -->
+                    <ul class="row cell-right mobile-menu mobile-768 mobile-top-bar">
+                        <li class="cell toggle-side-bar-btn"><i class="fas fa-bars"></i></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- 좌측 사이드 바 메뉴 -->
+    <div class="right-side-bar-box">
+        <div class="right-side-bar">
+            <div class="menu-1">
+                <ul>
+                    <li>
+                        <a>작품</a>
+                        <ul class="sec-menu-box">
+                            <li><a href="./index.html#work-page">코딩</a></li>
+                            <li><a href="./index.html#design-page">디자인</a></li>
+                            <li><a href="./index.html#etc-page">기타</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./info.html">소개</a>
+                    </li>
+                    <li>
+                        <a href="./trip.html">여행</a>
+                    </li>
+                    <li>
+                        <a href="./ability.html">능력</a>
+                    </li>
+                </ul>
+                <ul class="mobile-contact">
+                    <li><a href="https://to2.kr/beq" class="ico-box youtube-ico"><span class="ico"><i class="fab fa-youtube"></i></span><span class="text">유튜브 채널로 이동</span></a></li>
+                    <li><a href="" class="ico-box phone-ico"><span class="ico"><i class="fas fa-mobile-alt"></i></span><span class="text">010-4444-1782</span></a></li>
+                    <li><a href="https://to2.kr/ber" class="ico-box blog-ico"><span class="ico"><i class="fas fa-user-circle"></i></span><span class="text">블로그로 이동</span></a></li>
+                    <li><a href="" class="ico-box mail-ico"><span class="ico"><i class="fas fa-envelope"></i></span><span class="text">a01044441782@gmail.com</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 메인 페이지 -->
+    <div class="page page-1">
+        <div class="page-wrap">
+            <div class="con">
+                <div class="main-box">
+                    <div class="main-line">
+                        <div class="text-box title-box">
+                            <div class="title main-title">안녕하세요.<br>신입 디자이너 <br class="mobile-430">김진용입니다.</div>
+                            <div class="blue-bg main-blue-bg"></div>
+                            <div class="white-bg"></div>
+                        </div>
+                        <div class="img-box main-character"><img src="./img/main-character.png" alt=""></div>
+                    </div>
+                    <div class="text-box sub-title-box text-align-center">
+                        <span class="sub-title"><strong>"좋은 자세로부터<br class="mobile-320"> 나온 결과물은 곧다."</strong><br>다양한 관점에서 보는 시각으로 사용자의 요구(needs)를 끝까지<br class="pc-mobile"> 집착하여유저의 삶에서 하나의 점이라도<br class="pc-mobile"> 해결하여 즐거움을 전해드리겠습니다.</span>
+                    </div>
+                    <div class="scroll-box text-align-center" id="work-page">
+                        <div class="arrow-ico"><i class="fas fa-angle-double-down"></i></div>
+                        <span>스크롤을 내리면 저의 작품을 보실 수 있습니다.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page page-2">
+        <div class="page-wrap">
+            <div class="con">
+                <div class="main-box">
+                    <div class="tab-box">
+                        <div class="head line-height-0-ch-only  text-align-center">
+                            <ul class="row inline-block">
+                                <li class="cell active">코딩</li>
+                                <li class="cell" id="design-page">디자인</li>
+                                <li class="cell" id="etc-page">그외</li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                            <ul class="row">
+                                <li class="coding tap-con cell">
+                                    <ul class="row">
+                                        <li class="cell">
+                                            <a href="https://kimjinyong0908.github.io/web_pf_2020/how_is_the%20weather/" target="_blank">
+                                                <div class="img-box">
+                                                    <div class="video-box">
+                                                        <video autoplay="autoplay" loop="loop" muted="muted" webkit-playsinline="webkit-playsinline" playsinline="playsinline">
+                                                            <source src="https://kimjinyong0908.github.io/web_pf_img/how is the weather/video/1-content.mp4" type="video/mp4">
+                                                        </video>
+                                                    </div>
+                                                </div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">앱 기획</div>
+                                                    <div class="title">날씨어때</div>
+                                                    <div class="sub-title">날씨와 지속가능한 감성형 콘텐츠</div>
+                                                    <div class="sub-title sub-title-2">( UI디자인 / 앱 기획 )</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">앱 기획</div>
+                                                    <div class="title">날씨어때</div>
+                                                    <div class="sub-title mobile-480-none">날씨와 지속가능한 감성형 콘텐츠</div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">( UI디자인 / 앱 기획 )</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="https://kimjinyong0908.github.io/web_pf_2020/CocaCola/" target="_blank">
+                                                <div class="img-box"><img src="./img/some-cocacola.png" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">사이트 제안</div>
+                                                    <div class="title">코카콜라 - 코리아</div>
+                                                    <div class="sub-title">코카콜라 코리아 전용 홈페이지 제작</div>
+                                                    <div class="sub-title sub-title-2">( 웹 / 적응형 )</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">사이트 제안</div>
+                                                    <div class="title">코카콜라 - 코리아</div>
+                                                    <div class="sub-title mobile-480-none">코카콜라 코리아 전용 홈페이지 제작</div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">( 웹 / 적응형 )</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="https://kimjinyong0908.github.io/web_pf_2020/startbucks/" target="_blank">
+                                                <div class="img-box"><img src="./img/some-starbucks.jpg" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">사이트 제안</div>
+                                                    <div class="title">스타벅스 - 계면</div>
+                                                    <div class="sub-title">물체와 물체가 만나는 계면으로 공간을<br>허물어 어디서 마셔도 똑같은 스타벅스</div>
+                                                    <div class="sub-title sub-title-2">( 웹 / 적응형 )</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">사이트 제안</div>
+                                                    <div class="title">스타벅스 - 계면</div>
+                                                    <div class="sub-title mobile-480-none">계면을 허물어 어디서<br>마셔도 똑같은 스타벅스</div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">( 웹 / 적응형 )</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="https://kimjinyong0908.github.io/web_pf_2020/nike/" target="_blank">
+                                                <div class="img-box"><img src="./img/some-nike.png" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">사이트 모작</div>
+                                                    <div class="title">나이키</div>
+                                                    <div class="sub-titl">기업 페이지</div>
+                                                    <div class="sub-title sub-title-2">( 웹 / 적응형 )</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">사이트 모작</div>
+                                                    <div class="title">나이키</div>
+                                                    <div class="sub-title mobile-480-none">기업 페이지</div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">( 웹 / 적응형 )</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="https://kimjinyong0908.github.io/web_pf_2020/Panasonic-dongA/" target="_blank">
+                                                <div class="img-box"><img src="./img/some-Panasonic-dongA.png" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">사이트 모작</div>
+                                                    <div class="title">파나소닉 동아</div>
+                                                    <div class="sub-title">기업 페이지</div>
+                                                    <div class="sub-title sub-title-2">( 웹 / 반응형 )</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">사이트 모작</div>
+                                                    <div class="title">파나소닉 동아</div>
+                                                    <div class="sub-title mobile-480-none">기업 페이지</div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">( 웹 / 반응형 )</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="https://kimjinyong0908.github.io/web_pf_2020/Microsystems/" target="_blank">
+                                                <div class="img-box"><img src="./img/some-microsystems.jpg" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">사이트 모작</div>
+                                                    <div class="title">마이크로시스템</div>
+                                                    <div class="sub-title">기업 페이지</div>
+                                                    <div class="sub-title sub-title-2">( 웹 / 적응형 )</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">사이트 모작</div>
+                                                    <div class="title">마이크로시스템</div>
+                                                    <div class="sub-title mobile-480-none">기업 페이지</div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">( 웹 / 적응형 )</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="https://kimjinyong0908.github.io/web_pf_2020/WINIX/" target="_blank">
+                                                <div class="img-box"><img src="./img/some-winix.jpg" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">사이트 모작</div>
+                                                    <div class="title">위닉스</div>
+                                                    <div class="sub-title">기업 페이지</div>
+                                                    <div class="sub-title sub-title-2">( 웹 )</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">사이트 모작</div>
+                                                    <div class="title">위닉스</div>
+                                                    <div class="sub-title mobile-480-none">기업 페이지</div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">( 웹 )</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="https://kimjinyong0908.github.io/web_pf_2020/We%20Design%20X/" target="_blank">
+                                                <div class="img-box"><img src="./img/some-we-design-x.png" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">사이트 모작</div>
+                                                    <div class="title">위디엑스</div>
+                                                    <div class="sub-title">UX/UI 디자인 회사 페이지</div>
+                                                    <div class="sub-title sub-title-2">( 웹 / 적응형 )</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">사이트 모작</div>
+                                                    <div class="title">위디엑스</div>
+                                                    <div class="sub-title mobile-480-none">UX/UI 디자인 회사 페이지</div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">( 웹 / 적응형 )</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="https://kimjinyong0908.github.io/web_pf_2020/vivienne%20-%20web/" target="_blank">
+                                                <div class="img-box"><img src="./img/some-vivienne.png" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">사이트 모작</div>
+                                                    <div class="title">비비엔느</div>
+                                                    <div class="sub-title">쇼핑몰 페이지</div>
+                                                    <div class="sub-title sub-title-2">( 웹 )</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">사이트 모작</div>
+                                                    <div class="title">비비엔느</div>
+                                                    <div class="sub-title mobile-480-none">쇼핑몰 페이지</div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">( 웹 )</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="https://kimjinyong0908.github.io/web_pf_2020/BNX/" target="_blank">
+                                                <div class="img-box"><img src="./img/some-bnx.png" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">사이트 모작</div>
+                                                    <div class="title">BNX</div>
+                                                    <div class="sub-title">쇼핑몰 페이지</div>
+                                                    <div class="sub-title sub-title-2">( 웹 / 반응형 )</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">사이트 모작</div>
+                                                    <div class="title">BNX</div>
+                                                    <div class="sub-title mobile-480-none">쇼핑몰 페이지</div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">( 웹 / 반응형 )</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="design tap-con cell">
+                                    <ul class="row">
+                                        <li class="cell">
+                                            <a href="./img/design-bus-1.png" data-title="PR했던 패널입니다." data-lightbox="bus-set">
+                                                <div class="img-box"><img src="./img/some-competition-bus.png" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">최우수 시장상</div>
+                                                    <div class="title">대전버스디자인공모전</div>
+                                                    <div class="sub-title">6인 팀프로젝트</div>
+                                                    <div class="sub-title sub-title-2">( 리뉴얼 후 실제 운행중 )</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">최우수 시장상</div>
+                                                    <div class="title">대전버스디자인공모전</div>
+                                                    <div class="sub-title mobile-480-none">6인 팀프로젝트</div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">( 리뉴얼 후 실제 운행중 )</div>
+                                                </div>
+                                                <a style="display:none;" href="./img/design-bus-2.png" data-title="버스 내부 노선도 개선안입니다." data-lightbox="bus-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-bus-3.png" data-title="버스 외부 노선도 개선안입니다." data-lightbox="bus-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="./img/design-b-hug-1.jpg" data-title="B-Hug는 유아용 크래들입니다." data-lightbox="b-hug-set">
+                                                <div class="img-box"><img src="./img/some-design-b-hug.png" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">제품디자인</div>
+                                                    <div class="title">B-Hug</div>
+                                                    <div class="sub-title">홈 케어 크래들입니다.</div>
+                                                    <div class="sub-title">외부의 미세먼지 등 오염으로부터<br>아이를 보호하며 최상의 상태를 아이에게 제공합니다.</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">제품디자인</div>
+                                                    <div class="title">B-Hug</div>
+                                                    <div class="sub-title mobile-480-none">홈 케어 크래들입니다.</div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">외부의 미세먼지 등<br>오염으로부터아이를 보호하며<br>최상의 상태를 아이에게 제공합니다.</div>
+                                                </div>
+                                                <a style="display:none;" href="./img/design-b-hug-2.png" data-title="B-Hug의 앱/웹 연동페이지입니다." data-lightbox="b-hug-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-b-hug-3.png" data-title="B-Hug의 앱/웹 연동페이지입니다." data-lightbox="b-hug-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="./img/design-circle-1.png" data-title="B-Hug는 유아용 크래들입니다." data-lightbox="circle-set">
+                                                <div class="img-box"><img src="./img/some-design-circle.png" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">제품디자인</div>
+                                                    <div class="title">Circle-pop</div>
+                                                    <div class="sub-title">블루투스 스피커입니다.</div>
+                                                    <div class="sub-title sub-title-2">원통형의 모양이며 이형태를 돌리며 인터렉션이 이뤄지고<br>사용자가 음악에 대한 즐거움과 EQ에 대한 거리감을 줄여줍니다.</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">제품디자인</div>
+                                                    <div class="title">Circle-pop</div>
+                                                    <div class="sub-title mobile-480-none">블루투스 스피커입니다.</div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">원통형의 모양이며 이형태를 돌리며<br>인터렉션이 이뤄지고사용자가 음악에 대한<br>즐거움과 EQ에 대한 거리감을 줄여줍니다.</div>
+                                                </div>
+                                                <a style="display:none;" href="./img/design-circle-2.png" data-title="인터렉션을 통한 사용성과 앱/웹입니다." data-lightbox="circle-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="./img/design-folder-1.jpg" data-title="B-Hug는 유아용 크래들입니다." data-lightbox="folder-set">
+                                                <div class="img-box"><img src="./img/some-design-folder.jpg" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">제품디자인</div>
+                                                    <div class="title">Folder</div>
+                                                    <div class="sub-title">유모차와 카시트 2in1</div>
+                                                    <div class="sub-title sub-title-2">양대면이 가능한 럭셔리한 유모차 &amp; 카시트 제안</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">제품디자인</div>
+                                                    <div class="title">Folder</div>
+                                                    <div class="sub-title mobile-480-none">유모차와 카시트 2in1</div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">양대면이 가능한 럭셔리한 유모차 &amp; 카시트 제안</div>
+                                                </div>
+                                                <a style="display:none;" href="./img/design-folder-2.jpg" data-title="인터렉션을 통한 사용성과 앱/웹입니다." data-lightbox="folder-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-folder-3.jpg" data-title="인터렉션을 통한 사용성과 앱/웹입니다." data-lightbox="folder-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-folder-4.jpg" data-title="인터렉션을 통한 사용성과 앱/웹입니다." data-lightbox="folder-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-folder-5.jpg" data-title="인터렉션을 통한 사용성과 앱/웹입니다." data-lightbox="folder-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="./img/design-dalette-1.png" data-title="PR했던 패널입니다." data-lightbox="dalette-set">
+                                                <div class="img-box"><img src="./img/some-design-dalette.png" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">디자인 입선</div>
+                                                    <div class="title">Dalette - 유아 그림자 놀이</div>
+                                                    <div class="sub-title">2인 팀프로젝트</div>
+                                                    <div class="sub-title sub-title-2">기존의 그림자 놀이의 경험을 더 확장시켜<br>아이와 부모가 함께 상호간 교감관계의 증대.</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">디자인 입선</div>
+                                                    <div class="title">Dalette - 유아 그림자 놀이</div>
+                                                    <div class="sub-title mobile-480-none">2인 팀프로젝트</div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">기존의 그림자 놀이의 경험을<br>더 확장시켜아이와 부모가 함께<br>상호간 교감관계의 증대.</div>
+                                                </div>
+                                                <a style="display:none;" href="./img/design-dalette-2.png" data-title="버스 내부 노선도 개선안입니다." data-lightbox="dalette-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-dalette-3.png" data-title="버스 외부 노선도 개선안입니다." data-lightbox="dalette-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="./img/design-water.png" data-title="It's 니모는 대전의 생수 아이템을 제안합니다." data-lightbox="water-set">
+                                                <div class="img-box"><img src="./img/some-design-water.png" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">제품디자인</div>
+                                                    <div class="title">It's 니모</div>
+                                                    <div class="sub-title">대전의 생수 아이템을 제안합니다.</div>
+                                                    <div class="sub-title sub-title-2">255ml라는 작은 생수병을 포켓처럼 설계하고<br>It's 水를 새롭게 It's 니모라고 제안합니다.</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">제품디자인</div>
+                                                    <div class="title">It's 니모</div>
+                                                    <div class="sub-title mobile-480-none">대전의 생수 아이템을 제안합니다.</div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">255ml라는 작은 생수병을<br>포켓처럼 설계하고 It's 水를<br>새롭게 It's 니모라고 제안합니다.</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="./img/design-morris.jpg" data-title="It's 니모는 대전의 생수 아이템을 제안합니다." data-lightbox="morris-set">
+                                                <div class="img-box"><img src="./img/some-design-morris.jpg" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">제품디자인</div>
+                                                    <div class="title">꽃펜</div>
+                                                    <div class="sub-title">살랑살랑 흔들리는 꽃</div>
+                                                    <div class="sub-title sub-title-2">볼펜 브랜드 모리스의 봄꽃을<br>형상화한 볼펜 디자인을 제안한다.</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">제품디자인</div>
+                                                    <div class="title">꽃펜</div>
+                                                    <div class="sub-title mobile-480-none">살랑살랑 흔들리는 꽃</div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">볼펜 브랜드 모리스의 봄꽃을<br>형상화한 볼펜 디자인을 제안한다.</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="./img/design-layer-1.png" data-title="PR했던 패널입니다." data-lightbox="layer-set">
+                                                <div class="img-box"><img src="./img/some-design-layer.png" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">공간 디자인</div>
+                                                    <div class="title">Layer - 커뮤니티 센터</div>
+                                                    <div class="sub-title">2인 팀프로젝트</div>
+                                                    <div class="sub-title sub-title-2">시민들이 참여하고 직접 만들어가는<br>대형 커뮤니티 센터를 제안합니다.</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">공간 디자인</div>
+                                                    <div class="title">Layer - 커뮤니티 센터</div>
+                                                    <div class="sub-title mobile-480-none">2인 팀프로젝트</div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">시민들이 참여하고 직접 만들어가는<br>대형 커뮤니티 센터를 제안합니다.</div>
+                                                </div>
+                                                <a style="display:none;" href="./img/design-layer-2.png" data-title="버스 내부 노선도 개선안입니다." data-lightbox="layer-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-layer-3.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="layer-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="./img/design-feel.jpg" data-title="PR했던 패널입니다." data-lightbox="feel-set">
+                                                <div class="img-box"><img src="./img/some-design-feel.jpg" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">그래픽 디자인</div>
+                                                    <div class="title">리터칭</div>
+                                                    <div class="sub-title">FeeelD-study</div>
+                                                    <div class="sub-title sub-title-2">포토샵 리터칭으로 감각적인 효과내기.</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">그래픽 디자인</div>
+                                                    <div class="title">리터칭</div>
+                                                    <div class="sub-title mobile-480-none">FeeelD-study</div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">포토샵 리터칭으로 감각적인 효과내기.</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="./img/design-car-1.jpg" data-title="PR했던 패널입니다." data-lightbox="car-set">
+                                                <div class="img-box"><img src="./img/some-design-car.jpg" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">명함 디자인</div>
+                                                    <div class="title">청주 - 카솔루션 우암점</div>
+                                                    <div class="sub-title"></div>
+                                                    <div class="sub-title sub-title-2">친구가 튜닝샵을 오픈하여 명함 작업을 맡아줬습니다.</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">명함 디자인</div>
+                                                    <div class="title">청주 - 카솔루션 우암점</div>
+                                                    <div class="sub-title mobile-480-none"></div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">친구가 튜닝샵을 오픈하여 명함 작업을 맡아줬습니다.</div>
+                                                </div>
+                                                <a style="display:none;" href="./img/design-car-2.jpg" data-title="버스 내부 노선도 개선안입니다." data-lightbox="car-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-car-3.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="car-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="./img/design-cross-1.jpg" data-title="PR했던 패널입니다." data-lightbox="cross-set">
+                                                <div class="img-box"><img src="./img/some-design-cross.jpg" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">INTERNI &amp; Décor 공간대전 입선</div>
+                                                    <div class="title">CROSS OVER</div>
+                                                    <div class="sub-title">2인 팀프로젝트</div>
+                                                    <div class="sub-title sub-title-2">우리는 편리하고 유익한 삶에서 인간 존재 가치를<br>체감하지 못했던현대인의 모순적인 상태를,<br>물리적인 관계 이상의 감각을 충족시키며<br>주체라는 것을 깨닫게되는 “감각의 교차 공간” 을 제안한다.</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">INTERNI &amp; Décor 공간대전 입선</div>
+                                                    <div class="title">CROSS OVER</div>
+                                                    <div class="sub-title mobile-480-none">2인 팀프로젝트</div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">우리는 편리하고 유익한 삶에서<br>인간 존재 가치를 체감하지 못했던<br>현대인의 모순적인 상태를, 물리적인<br>관계 이상의 감각을 충족시키며<br>주체라는 것을 깨닫게되는<br>“감각의 교차 공간” 을 제안한다.</div>
+                                                </div>
+                                                <a style="display:none;" href="./img/design-cross-2.jpg" data-title="버스 내부 노선도 개선안입니다." data-lightbox="cross-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-cross-3.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="cross-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-cross-4.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="cross-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-cross-5.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="cross-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-cross-6.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="cross-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-cross-7.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="cross-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-cross-8.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="cross-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-cross-9.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="cross-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-cross-10.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="cross-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-cross-11.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="cross-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-cross-12.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="cross-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-cross-13.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="cross-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-cross-14.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="cross-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-cross-15.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="cross-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="./img/design-artplace-1.jpg" data-title="PR했던 패널입니다." data-lightbox="artplace-set">
+                                                <div class="img-box"><img src="./img/some-design-artplace.jpg" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">대전 원도심 살리기</div>
+                                                    <div class="title">예술낭만</div>
+                                                    <div class="sub-title">2인 팀프로젝트</div>
+                                                    <div class="sub-title sub-title-2">원도심의 기능 재생과 활성화를 위해<br>거리적 특성을 바탕으로 잠재된 요소를 극대화시켜 <br>젊은층과 장년층, 시민들과 지역주민, 예스러움과 현대스러움이<br>어우러지는 번짐의 컨셉을 제안한다.</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">대전 원도심 살리기</div>
+                                                    <div class="title">예술낭만</div>
+                                                    <div class="sub-title mobile-480-none">2인 팀프로젝트</div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">원도심의 기능 재생과 활성화를 위해<br>거리적 특성을 바탕으로 잠재된 요소를<br>극대화시켜 젊은층과 장년층,<br> 시민들과 지역주민, 예스러움과 <br>현대스러움이 어우러지는 <br>번짐의 컨셉을 제안한다.</div>
+                                                </div>
+                                                <a style="display:none;" href="./img/design-artplace-2.jpg" data-title="버스 내부 노선도 개선안입니다." data-lightbox="artplace-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-artplace-3.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="artplace-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-artplace-4.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="artplace-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-artplace-5.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="artplace-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-artplace-6.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="artplace-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-artplace-7.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="artplace-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-artplace-8.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="artplace-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-artplace-9.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="artplace-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-artplace-10.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="artplace-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-artplace-11.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="artplace-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-artplace-12.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="artplace-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-artplace-13.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="artplace-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-artplace-14.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="artplace-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-artplace-15.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="artplace-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-artplace-16.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="artplace-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-artplace-17.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="artplace-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-artplace-18.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="artplace-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="./img/design-book-1.jpg" data-title="PR했던 패널입니다." data-lightbox="book-set">
+                                                <div class="img-box"><img src="./img/some-design-book.jpg" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">KT&amp;G 상상마케팅</div>
+                                                    <div class="title">북덕방</div>
+                                                    <div class="sub-title">대외활동</div>
+                                                    <div class="sub-title sub-title-2">지역적 색을 활용하여 상권을 부흥시키는 제안으로<br>대전역 근처의 헌책방을 살려 북카페와<br>게스트하우스를 합치는 방안을 제안한다.</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">KT&amp;G 상상마케팅</div>
+                                                    <div class="title">북덕방</div>
+                                                    <div class="sub-title mobile-480-none">대외활동</div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">지역적 색을 활용하여 상권을 부흥시키는 제안으로<br>대전역 근처의 헌책방을 살려 북카페와<br>게스트하우스를 합치는 방안을 제안한다.</div>
+                                                </div>
+                                                <a style="display:none;" href="./img/design-book-2.jpg" data-title="버스 내부 노선도 개선안입니다." data-lightbox="book-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-book-3.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="book-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-book-4.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="book-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="./img/design-ledger-1.jpg" data-title="PR했던 패널입니다." data-lightbox="ledger-set">
+                                                <div class="img-box"><img src="./img/some-design-ledger.jpg" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">어플리케이션 제안</div>
+                                                    <div class="title">세모장부</div>
+                                                    <div class="sub-title">3인 프로젝트</div>
+                                                    <div class="sub-title sub-title-2">기존 기업 장부어플리케이션을<br>신뢰도 있는 컬러와 가시성과 가독성을 올리고<br>불편함 없는 레이아웃으로 새롭게 제안한다.</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">어플리케이션 제안</div>
+                                                    <div class="title">세모장부</div>
+                                                    <div class="sub-title mobile-480-none">3인 프로젝트</div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">기존 기업 장부어플리케이션을<br>신뢰도 있는 컬러와 가시성과 가독성을<br>올리고 불편함 없는 레이아웃으로 새롭게 제안한다.</div>
+                                                </div>
+                                                <a style="display:none;" href="./img/design-ledger-2.png" data-title="버스 내부 노선도 개선안입니다." data-lightbox="ledger-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-ledger-3.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="ledger-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="./img/design-health-center.jpg" data-title="PR했던 패널입니다." data-lightbox="health-set">
+                                                <div class="img-box"><img src="./img/some-design-health-center.jpg" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">웹사이트 제안</div>
+                                                    <div class="title">대전서구보건소</div>
+                                                    <div class="sub-title"></div>
+                                                    <div class="sub-title sub-title-2">기존의 보건소사이트를 호완성을 보안하고<br>사용자에게 불편함없는 설계를 제안한다.</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">웹사이트 제안</div>
+                                                    <div class="title">대전서구보건소</div>
+                                                    <div class="sub-title mobile-480-none"></div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">기존의 보건소사이트를 호완성을 보안하고<br>사용자에게 불편함없는 설계를 제안한다.</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="./img/design-gradient.jpg" data-title="PR했던 패널입니다." data-lightbox="gradient-set">
+                                                <div class="img-box"><img src="./img/some-design-gradient.jpg" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">그래픽 디자인</div>
+                                                    <div class="title">그라데이션</div>
+                                                    <div class="sub-title">Study</div>
+                                                    <div class="sub-title sub-title-2"></div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">그래픽 디자인</div>
+                                                    <div class="title">그라데이션</div>
+                                                    <div class="sub-title mobile-480-none">Study</div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none"></div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="./img/design-tomato.jpg" data-title="PR했던 패널입니다." data-lightbox="tomato-set">
+                                                <div class="img-box"><img src="./img/some-design-tomato.jpg" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">상세페이지</div>
+                                                    <div class="title">토마토</div>
+                                                    <div class="sub-title"></div>
+                                                    <div class="sub-title sub-title-2">.</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">상세페이지</div>
+                                                    <div class="title">토마토</div>
+                                                    <div class="sub-title mobile-480-none"></div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">.</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="./img/design-fat-1.png" data-title="PR했던 패널입니다." data-lightbox="fat-set">
+                                                <div class="img-box"><img src="./img/some-design-fat.jpg" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">그래픽 디자인</div>
+                                                    <div class="title">지방많은 한국인</div>
+                                                    <div class="sub-title">카드형 뉴스 인포그래픽</div>
+                                                    <div class="sub-title sub-title-2">.</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">그래픽 디자인</div>
+                                                    <div class="title">지방많은 한국인</div>
+                                                    <div class="sub-title mobile-480-none">카드형 뉴스 인포그래픽</div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">.</div>
+                                                </div>
+                                                <a style="display:none;" href="./img/design-fat-2.png" data-title="버스 내부 노선도 개선안입니다." data-lightbox="fat-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-fat-3.png" data-title="버스 외부 노선도 개선안입니다." data-lightbox="fat-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-fat-4.png" data-title="버스 외부 노선도 개선안입니다." data-lightbox="fat-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-fat-5.png" data-title="버스 외부 노선도 개선안입니다." data-lightbox="fat-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-fat-6.png" data-title="버스 외부 노선도 개선안입니다." data-lightbox="fat-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-fat-7.png" data-title="버스 외부 노선도 개선안입니다." data-lightbox="fat-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                                <a style="display:none;" href="./img/design-fat-8.jpg" data-title="버스 외부 노선도 개선안입니다." data-lightbox="fat-set"><img src="https://placekitten.com/100/99" alt=""></a>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="./img/design-poster.jpg" data-title="PR했던 패널입니다." data-lightbox="poster-set">
+                                                <div class="img-box"><img src="./img/some-design-poster.jpg" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">포스터</div>
+                                                    <div class="title">아프리카 문화 페스티벌</div>
+                                                    <div class="sub-title"></div>
+                                                    <div class="sub-title sub-title-2">.</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">포스터</div>
+                                                    <div class="title">아프리카 문화 페스티벌</div>
+                                                    <div class="sub-title mobile-480-none"></div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">.</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="cell">
+                                            <a href="./img/design-workmom.jpg" data-title="PR했던 패널입니다." data-lightbox="workmom-set">
+                                                <div class="img-box"><img src="./img/some-design-workmom.jpg" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">그래픽 디자인</div>
+                                                    <div class="title">워킹맘</div>
+                                                    <div class="sub-title"></div>
+                                                    <div class="sub-title sub-title-2">.</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">그래픽 디자인</div>
+                                                    <div class="title">워킹맘</div>
+                                                    <div class="sub-title mobile-480-none"></div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">.</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="etc tap-con cell">
+                                    <ul class="row">
+                                        <li class="cell">
+                                            <a href="https://youtu.be/fwDsfRH4SZM" target="_blank">
+                                                <div class="img-box"><img src="./img/some-etc-kt&g-logo.jpg" alt=""></div>
+                                                <div class="hiden-text-box pc-769">
+                                                    <div class="topic">KT&amp;G 상상마케팅스쿨</div>
+                                                    <div class="title">팀원소개 영상</div>
+                                                    <div class="sub-title"></div>
+                                                    <div class="sub-title sub-title-2">.</div>
+                                                </div>
+                                                <div class="mobile-text-box mobile-768">
+                                                    <div class="topic">KT&amp;G 상상마케팅스쿨</div>
+                                                    <div class="title">팀원소개 영상</div>
+                                                    <div class="sub-title mobile-480-none"></div>
+                                                    <div class="sub-title sub-title-2 mobile-480-none">.</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-wrap">
+            <div class="con">
+                <div class="text-box">
+                    <span><strong>감사합니다.</strong><br>어제보다 더 성장할 디자이너<br class="mobile-768"> 김진용의 포트폴리오 사이트였습니다 :)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./index.js"></script>
+    <script src="./common.js"></script>
+</body>
+
+</html>
