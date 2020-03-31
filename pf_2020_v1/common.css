@@ -521,7 +521,7 @@ html.not-scroll-top-0 .header .header-wrap {
         display: block;
     }
 }
-@media (min-width:431px) and (max-width:1920px) {
+@media (min-width:431px) and (max-width:2400px) {
     .pc-mobile {
         display: block;
     }

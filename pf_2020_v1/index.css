@@ -184,8 +184,13 @@
     }
 }
 
-
-
+.page-1 .main-box .sub-title-box span {
+    font-size: 20px;
+    
+}
+.page-1 .main-box .sub-title-box span strong {
+    font-size: 24px;
+}
 
 .page-1 .main-box > .scroll-box {
     margin-top: 20px;
@@ -239,6 +244,7 @@
     cursor: pointer;
     padding: 5px 40px;
     margin: 0 10px;
+    font-size: 20px;
 }
 
 .page-2 .tab-box > .head > ul > li:hover {
