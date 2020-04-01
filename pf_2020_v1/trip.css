@@ -118,7 +118,7 @@
     transform: translateX(-50%);
     z-index: 10;
 }
-@media (max-width:320px) {
+@media (max-width:430px) {
     .page-1 .slide .visual .slick-prev {
         left:35%;
     }
