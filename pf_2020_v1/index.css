@@ -14,12 +14,16 @@
 
 @media (max-width:768px) {
     .page-1 .main-line > .main-character {
-        top: 130px;
+        top: auto;
+        bottom: -20%;
     }
 }
-@media (max-width:430px) {
+
+
+
+@media (max-width:693px) {
     .page-1 .main-line > .main-character {
-        width:280px;
+        width:270px;
     }
 }
 
@@ -51,17 +55,17 @@
 
 @media (max-width:768px) {
     .page-1 .main-line {
+        width: 90%;
         top: 180px;
     }
 }
 @media (max-width:430px) {
     .page-1 .main-line {
-        width: 386px;
+        
     }
 }
 @media (max-width:320px) {
     .page-1 .main-line {
-        width: 280px;
         height: 380px;
     }
 }
@@ -72,7 +76,7 @@
 }
 
 .page-1 .main-line .text-box .title {
-    font-size: 60px;
+    font-size: 56px;
     font-weight: 400;
     text-align: center;
     position: absolute;
@@ -81,7 +85,6 @@
     top: -50px;
     left: 50%;
     transform: translateX(-50%);
-    white-space: nowrap;
 }
 
 @media (max-width:1024px) {
@@ -111,7 +114,7 @@
 
 @media (max-width:1024px) {
     .page-1 .main-line .text-box .white-bg {
-        width: 280px;
+        width: 80%;
     }
 }
 
@@ -139,18 +142,17 @@
     }
 }
 
-@media (max-width:430px) {
+@media (max-width:768px) {
     .page-1 .main-line .text-box .main-blue-bg {
-        width: 410px;
+        width: 110%;
         height: 50px;
         top: 20px;
     }
 }
 @media (max-width:320px) {
     .page-1 .main-line .text-box .main-blue-bg {
-        width: 254px;
+        /*width: 254px;*/
         height: 60px;
-        top: 20px;
     }
 }
 
@@ -490,7 +492,7 @@
 
 /* 푸터 시작 */
 .footer {
-    background: #7AD0F0;
+    background: #34A8D4;
     margin-top: 100px;
 
 }
@@ -503,6 +505,7 @@
 .footer .text-box span {
     font-size: 28px;
     font-weight: 300;
+    color:#f9f9f9;
 }
 
 

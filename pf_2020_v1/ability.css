@@ -53,9 +53,23 @@ body {
     box-shadow: 6px 6px 10px rgba(0,0,0,.2);
     border-radius: 20px;
 }
+
+
 .page-1 .work-box .work-wrap > ul > .cell > .ico-box {
-    color:#7AD0F0;
+    color:#A5E1F8;
     font-size: 40px;
+}
+
+.page-1 .work-box .work-wrap > ul > .cell:nth-child(2) > .ico-box {
+    color:#7AD0F0;
+}
+
+.page-1 .work-box .work-wrap > ul > .cell:nth-child(3) > .ico-box {
+    color:#55BDE5;
+}
+
+.page-1 .work-box .work-wrap > ul > .cell:nth-child(4) > .ico-box {
+    color:#34A8D4;
 }
 
 
