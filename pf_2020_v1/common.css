@@ -418,6 +418,7 @@ html.not-scroll-top-0 .header .header-wrap {
     visibility:hidden;
     transition:visibility .5s, background-color .5s;
     z-index: 100;
+    cursor: pointer;
 }
 .right-side-bar-box.active {
     background-color:rgba(0,0,0,0.7);
@@ -446,20 +447,28 @@ html.not-scroll-top-0 .header .header-wrap {
     padding:20px 5px;
     font-size: 28px;
 }
-@media (max-width:320px) {
+@media (max-width:430px) {
     .right-side-bar > .menu-1 ul > li > a {
         font-size: 22px;
-        padding:5px;
+        padding:10px 5px;
     }
 }
 .right-side-bar > .menu-1 .mobile-contact {
     margin-top: 150px;
 }
-@media (max-width:320px) {
+@media (max-width:430px) {
     .right-side-bar > .menu-1 .mobile-contact {
         margin-top: 100px;
     }
 }
+
+@media (max-width:400px) {
+    .right-side-bar > .menu-1 .mobile-contact {
+        margin-top: 80px;
+    }
+}
+
+
 .right-side-bar > .menu-1 ul > li > .ico-box {
     font-size: 20px;
     text-align: center;
@@ -470,6 +479,20 @@ html.not-scroll-top-0 .header .header-wrap {
 .right-side-bar > .menu-1 ul > li > .ico-box span {
     display: block;
 }
+
+@media (max-width:430px) {
+    .right-side-bar > .menu-1 ul > li > .ico-box span {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:360px) {
+    .right-side-bar > .menu-1 ul > li > .ico-box span {
+        font-size: 14px;
+    }
+}
+
+
 
 .right-side-bar > .menu-1 ul > li:hover > a {
     color:#7AD0F0;
@@ -483,15 +506,36 @@ html.not-scroll-top-0 .header .header-wrap {
     padding-left: 30px;
     font-size: 24px;
 }
+
+
+/* 모바일 - 탑으로가는 버튼 */ 
+.mobile-top-btn {
+    position: fixed;
+    right:20px;
+    top:90%;
+    z-index: 3000;
+    cursor: pointer;
+}
+
+.mobile-top-btn i {
+    background-color: rgba(255,255,255,.5);
+    color:#bdbdbd;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    border:1px solid #bdbdbd;
+}
+
 @media (max-width:430px) {
     .right-side-bar {
+        padding-top: 60px;
         width:250px;
         right: -250px;
     }
 }
 @media (max-width:320px) {
     .right-side-bar {
-        padding-top: 60px;
+        padding-top: 40px;
         width:180px;
         right:-180px;
     }
